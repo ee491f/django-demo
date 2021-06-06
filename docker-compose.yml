@@ -2,3 +2,6 @@ services:
   app:
     build:
       context: .
+    volumes:
+      - .:/usr/src/app/
+
