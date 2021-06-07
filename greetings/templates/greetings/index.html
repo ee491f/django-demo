@@ -1,0 +1,12 @@
+{% if greeting_list %}
+  <ul>
+  {% for greeting in greeting_list %}
+    <li>{{ greeting.message }}</li>
+    <a href="{% url 'greetings:update' greeting.id %}">edit</a>
+    <a href="{% url 'greetings:delete' greeting.id %}">delete</a>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No greetings are available.</p>
+{% endif %}
+<a href="{% url 'greetings:create' %}">Create a New Greeting</a>
