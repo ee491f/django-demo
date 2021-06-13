@@ -1,2 +1,2 @@
 django ~= 3.2.4
-
+django-heroku ~= 0.3.1
