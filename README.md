@@ -38,6 +38,11 @@ Outline
         ### Dockerfile ###
         CMD script/start_app.sh
         ```
+    1. Copy Source Code into Container:
+        ```
+        ### Dockerfile ###
+        COPY . /usr/src/app/
+        ```
     1. Update Port
         ```
         ### scripts/start_app.sh
